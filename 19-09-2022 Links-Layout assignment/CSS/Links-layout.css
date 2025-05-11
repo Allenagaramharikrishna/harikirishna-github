@@ -1,0 +1,117 @@
+#parent{
+    margin: 40px;
+}
+#header{
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.nav {
+    display: flex;
+    width: 50%;
+    height: 20%;
+    align-items: center;
+}
+ul {
+    flex: 1;
+    list-style-type: none;
+    overflow: hidden;
+}
+li {
+    flex: 1;
+    float: left; 
+    padding: 8px;  
+}
+#list {
+    display: flex;
+}
+#header1 {
+    flex: 1;
+}
+#img {
+    display: flex;
+    margin: 30px;
+}
+.child1 {
+    height: 30px;
+    width: 50px;
+    flex: 5;
+    margin: 30px;
+
+}
+.child {
+    flex: 1;
+    margin: 30px;
+    padding: 40px;
+    width: 60px;
+
+}
+.child2 {
+    height: 300px;
+    width: 60%;
+}
+.child3 {
+    height: 30px;
+    width: 600px;
+    background-color: darkmagenta;
+    padding: 50px;
+    background-color: rgb(171, 13, 142);
+}
+input {
+    width: 500px;
+    height: 30px;
+}
+.button { 
+    height: 40px;
+    background-color: aqua;
+}
+.box {
+    display: flex;
+    background-color: lightpink;
+    margin-top: 10px;
+    padding: 20px;
+    margin-left: 10px;
+    width: 700px;
+}
+.child4 {
+    background-color: rgba(250, 235, 215, 0.833);
+    text-align: center;
+}
+.card {
+    background-color: #e9ebed;
+    width: 300px;
+    height: 250px;
+}
+.card2 {
+    background-color: #e9ebed;
+    width: 300px;
+    height: 250px;
+    margin-top: 30px;
+}
+.card3 {
+    background-color: #e9ebed;
+    width: 300px;
+    height: 250px;
+    margin-top :60px;
+
+}
+
+
+
+.card1{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    margin : 50px 250px;
+}
+.child5 {
+    background-image:url(../../../../../../Desktop/bg-boost-desktop.svg);
+    text-align: center;
+    background-color: blueviolet;
+}
+.buttom {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background-color: aliceblue;
+
+}

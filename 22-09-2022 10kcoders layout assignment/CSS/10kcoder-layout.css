@@ -1,0 +1,88 @@
+#parent {
+  display: flex;
+  background-color: aliceblue;
+}
+.logo {
+  flex: 1;
+}
+.nav {
+  flex: 11;
+  list-style-type: none;
+}
+.ul {
+  display: flex;
+}
+.li {
+  flex: 1;
+}
+#list {
+  display: flex;
+}
+.child1 {
+  font-style: oblique;
+}
+#header1 {
+  display: flex;
+}
+span {
+  color: rgb(12, 146, 12);
+}
+#header2 {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  line-height: 2em;
+}
+.heading {
+  text-align: center;
+}
+span {
+  color: green;
+}
+#header3 {
+  text-align: center;
+}
+.button {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  box-shadow: 0 8px 40px 0 rgb(0 0 0 / 37%);
+  letter-spacing: 1px;
+  border-radius: 5px 5px;
+  padding: 20px 30px;
+  display: inline-block;
+  background-color: coral;
+}
+#header4 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.h12 {
+  text-align: center;
+}
+.header {
+  margin: 100px;
+}
+#header5 {
+  display: flex;
+  justify-content: space-around;
+}
+.header {
+  margin: 100px;
+  text-align: center;
+}
+#header6 {
+  display: flex;
+  justify-content: space-around;
+}
+.header {
+  margin: 100px;
+  text-align: center;
+}
+#header7 {
+  text-align: center;
+}

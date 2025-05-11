@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="" href="./index2.html">
+    <link rel="" href="./index3.html">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+  form{
+     border: 1px solid;
+     width: 400px;
+     height: 400px;
+     position:relative;
+     color:rgb(5, 1, 254);
+     top: 140px;
+     left: 600px;
+     background-color:cornsilk;
+     border-radius: 50px;
+     opacity: 0.8;
+     text-align: center;
+  }
+  div{
+     position: relative;
+     top: 40px;
+     
+  }
+  body{
+     background-color: rgba(0, 255, 255, 0.426);
+     background-image: url(./img/black.webp);
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+  h1{
+    color: rgba(0, 255, 17, 0.819);
+    color: rgb(194, 188, 192);
+    font-size: 50px;
+    position: absolute;
+    left:420px; 
+    top:0px;
+  }
+  h2{
+    position: absolute;
+    top: 50px;
+    left:650px;
+    font-size: 30px;
+    color: rgb(238, 9, 135);
+  }
+  /* @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            form {
+                width: 90%;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+ */
+
+    
+    </style>
+ </head>
+ <body>
+     <div class="bor">
+     <form>
+        
+        <div>
+         <label for="username">USERNAME:</label>
+         <input type="text"id="username" placeholder="username" ><br><br>
+         <label for="password">PASSWORD:</label>
+         <input type="password"id="password" placeholder="password" minlength="8" ><br><br>
+         <label for="cpassword">CONFIRM PASSWORD:</label>
+         <input type="password" id="cpassword"placeholder="confirm password" minlength="8" ><br><br>
+         <label for="dob"> DATE OF BIRTH:</label>
+         <input type="date"id="date"><br><br>
+         <label for="mobile">MOBILE :</label>
+         <input type="text"id="mobile" placeholder="mobile number" maxlength="10" ><br><br>
+         <!-- <button >register</button> -->
+         <!-- <input type="button" value="submit"/> -->
+         <button>SUBMIT</button>
+         <button id="skip">SKIP</button>
+        </div>
+ 
+     </form> 
+    </div>
+    
+ 
+ 
+     <script>
+         a=[]
+        var formm=document.forms
+        formm[0].addEventListener("submit",(event)=>
+         {
+             event.preventDefault();
+ var userdata={
+     username:event.target[0].value,
+  password:event.target[1].value,
+              confirmpassword:event.target[2].value,
+              mobile:event.target[3].value
+ }
+ if(userdata.password===userdata.confirmpassword){
+ 
+ 
+ a.push(userdata)
+ window.location.assign("./index2.html")
+ 
+ }
+ else{
+     alert("password not same")
+ }
+ console.log(a)
+     event.target[0].value=""
+     event.target[1].value=""
+     event.target[2].value=""
+     event.target[3].value=""
+ 
+ window.localStorage.setItem("user",JSON.stringify(a))
+ // window.location.assign("./card.html")
+         });
+        
+
+         var skp=document.getElementById("skp")
+         skp.addEventListener("click",okk)
+
+         function okk(){
+          window.location.assign("./index2.html")
+         }
+ </script>
+ </body>
+ </html>

@@ -1,0 +1,155 @@
+#image {
+    height: 70px;
+    width: 70px;
+    background-color: antiquewhite;
+}
+#card {
+    display: flex;
+    list-style-type: none;
+    padding: 30px;
+}
+#img {
+    flex: 1;
+}
+#unordered {
+    flex: 8;
+}
+li {
+    flex: 1;
+}
+.heading {
+    display: grid;
+    grid: 200px / auto auto;
+    margin: 30px;
+    height: 300px;
+}
+.head {
+    font-weight: 500;
+    width: 300px;
+    text-align: center;
+    padding: 50px;
+}
+.img {
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+}
+.main-heading {
+    padding: 50px;
+    width: 300px;
+}
+.main-head {
+    font-size: 50px;
+    color: rgb(212, 182, 182);
+    font-weight: 500;
+}
+.main-card {
+    display: grid;
+    grid: 200px / auto auto;
+    background-color: rgb(170, 114, 47);
+    height: 400px;
+}
+.button {
+    background-color: blue;
+    color: rgb(161, 190, 214);
+    border-radius: 15px;
+    padding: 15px;
+    border: none;
+}
+.section-heading {
+    text-align: center;
+}
+.section-card {
+    background-color: blue;
+    height: 400px;
+    display: grid;
+    grid: 200px / auto auto auto;
+    justify-content: center;
+
+}
+.card {
+    background-color: rgb(66, 142, 208);
+    width: 150px;
+    height: 180px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 70px;
+    margin-bottom: 30px;
+}
+.section-paragraph {
+    font-size: 10px;
+}
+.section-button {
+    background-color: rgb(132, 132, 237);
+    color: rgb(194, 214, 232);
+    padding: 5px 15px;
+    border:navajowhite;
+    border-radius: 20px;
+}
+.section-1-image {
+    clip-path: circle();
+    height: 180px;
+    width: 158px;
+    margin: 20px;
+}
+.image-section {
+    text-align: center;
+}
+.blog-card {
+    border: 2px solid rgb(170, 146, 146);
+    height: 200px;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 100px;
+
+
+}
+.blog-button {
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 15px;
+}
+.blog-main {
+    display: grid;
+    grid: 200px / auto auto auto;
+    margin: 30px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.footer-button {
+    border-color: rgb(91, 91, 173);
+    color: blue;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+
+
+}
+.footer-button1 {
+    text-align: center;
+    margin: 100px;
+}
+.client-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    margin: 15px;
+}
+.image-card {
+    display: grid;
+    grid: 70px/ auto auto auto auto;
+    margin: 100px;
+}
+.footer-section{
+    background-color: rgb(111, 111, 192);
+    text-align: center;
+    color: rgb(201, 213, 224);
+    padding: 50px;
+}

@@ -1,0 +1,82 @@
+.logo img{
+    height: 70px;
+    width: auto;
+}
+#content1{
+    display: flex;
+    background-color: rgb(240, 248, 255);
+    margin: 30px;
+}
+nav{
+    flex:1 ;
+}
+ul{
+    display: flex;
+}
+li{
+    flex: 1;
+}
+#list{
+    display: flex;
+}
+#content2{
+    display: flex;
+    text-align: center;
+    background-color: blue;
+    margin: 30px;
+}
+.child1{
+    flex: 1;
+}
+.child2{
+     flex: 1;
+}
+.img{
+    height: 300px;
+    width: auto;
+}
+#content3{
+    margin: 30px;
+    text-align: center;
+}
+#content4{
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.907);
+    margin: 30px;
+}
+#content5{
+    background-color: blue;
+    padding-right:50px ;
+    margin: 30px;
+    
+}
+#content6{
+     text-align: center;
+     margin: 30px;
+}
+#content7{
+    width: 200px; ;
+    height: 220px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 1px 2px 3px 2px;
+    margin: 30px;
+    
+} 
+#header{
+    display: flex;
+    justify-content: space-around;
+
+}
+.section-3-button {
+    background-color: blue;
+    text-align: center;
+    justify-content: center;
+}
+
+#child2{
+    text-align: center;
+    background-color: blue;
+    margin: 30px;
+}
+

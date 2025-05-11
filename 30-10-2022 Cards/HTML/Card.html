@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cards</title>
+    <link rel="stylesheet" href="./cards.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          class="input"
+          id="search-input"
+          placeholder="search products here"
+        />
+        <button id="search" class="btn">search</button>
+        <div id="buttons">
+          <button class="button-value" onclick="filterProduct('all')">
+            all
+          </button>
+          <button class="button-value" onclick="filterProduct('t-shirts')">
+            t-shirts
+          </button>
+          <button class="button-value" onclick="filterProduct('electronic')">
+            electronic
+          </button>
+          <button class="button-value" onclick="filterProduct('jacket')">
+            jacket
+          </button>
+          <button class="button-value" onclick="filterProduct('rings')">
+            rings
+          </button>
+        </div>
+        <div id="products"></div>
+      </div>
+    </div>
+    <script src="./cards.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./cards.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search Product name here...."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Topwear')">
+          Topwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Pants')">
+          Bottomwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Watch')">
+          Jacket
+        </button>
+        <button class="button-value" onclick="filterProduct('Mobiles')">
+          Watch
+        </button>
+      </div>
+    </div>
+    <div id="products"></div>
+    <script src="./cards.js"></script>
+  </body>
+</html> -->

@@ -1,0 +1,45 @@
+#header{
+    display: flex;
+    background-color: aliceblue;
+}
+.logo{
+    flex: 1;
+}
+.nav{
+    flex:11;
+}
+ul{
+    display: flex;
+}
+li{
+    flex: 1;
+}
+#list{
+    display: flex;
+}
+.header{
+    flex:11;
+    text-align: center;
+    margin: 40px;
+}
+i {
+    font-size: 40px;
+}
+img{
+   width:100px;
+   height: 70px;px;
+}
+.card {
+    margin: 100px;
+}
+.header{
+    flex: 11;
+    text-align: center;
+}
+.button{
+    background-color: coral;
+    size: 50px;
+}
+
+
+

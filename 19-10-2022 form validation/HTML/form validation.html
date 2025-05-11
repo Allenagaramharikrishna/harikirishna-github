@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./data-validation.css" />
+  </head>
+  <body>
+    <div>
+      <div class="card">
+        <img
+          src="https://www.10000coders.co/assets/10000coders-logo.png?v=1.2"
+        />
+        <h1>Ready to get a well-paying IT job? Awesome!</h1>
+        <h4>
+          Attend our job-guaranteed, 6-month full-stack developer training
+          program. We will refund every single rupee back to you, if you do not
+          get a job in 6 months.
+        </h4>
+      </div>
+      <form id="form" method="get" action="" target="_blank">
+        <div class="field">
+          <label for="fullName">Full Name </label>
+          <input type="text" name="fullname" id="fullName" />
+          <h5>Enter your Name</h5>
+          <p id="nameErr"></p>
+        </div>
+        <div class="field">
+          <label for="email">E-mail * </label>
+          <input type="text" name="email" id="email" />
+          <h5>
+            Use the same email that you have used while signing up for the boot
+            camp
+          </h5>
+          <p id="emailErr"></p>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" />
+          <h5>Your active mobile number</h5>
+          <p id="phoneErr"></p>
+        </div>
+        <!-- <div class="field" id="details">
+          <label>Degree Details</label>
+          <input list="options" />
+          <datalist id="options">
+            <option>--Select--</option>
+            <option>BSC</option>
+            <option>BE</option>
+            <option>BCOM/BSC</option>
+            <option>OTHERS</option>
+          </datalist>
+          <p id="detailsErr"></p>
+        </div> -->
+
+        <div class="field">
+          <lable>Degree Details</lable>
+          <select id="details">
+            <option>--select--</option>
+            <option>MSC</option>
+            <option>BE/BTECH/</option>
+            <option>BSC/BCOM</option>
+            <option>OTHER</option>
+          </select>
+          <p id="detailsErr"></p>
+        </div>
+        <div class="field">
+          <lable>Passed Out</lable>
+          <select id="passed">
+            <option>--select--</option>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2020</option>
+          </select>
+          <p id="passedErr"></p>
+        </div>
+        <div class="field">
+          <lable>Present Status</lable>
+          <select id="present">
+            <option>--select--</option>
+            <option>Studying</option>
+            <option>Looking for Job</option>
+            <option>OTHER</option>
+          </select>
+          <p id="presentErr"></p>
+        </div>
+        <input type="submit" class="button" />
+      </form>
+    </div>
+
+    <script src="../Javascript/form validation.js"></script>
+  </body>
+</html>

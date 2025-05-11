@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <script src="../Javascript/Javascript.js"></script>
+  </body>
+  <head>
+    <title>JS Mouse Events - Button Demo</title>
+  </head>
+  <style>
+    .hover {
+      background-color: rgb(11, 237, 11);
+      padding: 10px;
+      color: #fff;
+    }
+    .hover1 {
+      background-color: rgb(18, 185, 246);
+      padding: 10px;
+      color: #fff;
+    }
+    .hover2 {
+      background-color: rgb(204, 12, 175);
+      padding: 10px;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <section>
+      <div class="btn_div"><button class="btn">button</button></div>
+    </section>
+    <section>
+      <div class="btn_div">
+        <button class="btn1" style="margin-top: 20px">doubleclick</button>
+      </div>
+    </section>
+    <section>
+      <div class="btn_div">
+        <button class="btn2" style="margin-top: 20px">date/month/year</button>
+      </div>
+    </section>
+    <section>
+      <div class="btn_div">
+        <button class="btn3" style="margin-top: 20px">day</button>
+      </div>
+    </section>
+    <section>
+      <div class="btn_div">
+        <button class="btn4" style="margin-top: 20px">time</button>
+      </div>
+    </section>
+    <div class="hover">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+      distinctio excepturi earum accusantium aliquid totam? Rerum eligendi modi
+      quisquam culpa? Nemo animi esse consectetur ipsum rem numquam sequi,
+      impedit adipisci!
+    </div>
+    <div class="hover1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+      distinctio excepturi earum accusantium aliquid totam? Rerum eligendi modi
+      quisquam culpa? Nemo animi esse consectetur ipsum rem numquam sequi,
+      impedit adipisci!
+    </div>
+    <div class="hover2">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+      distinctio excepturi earum accusantium aliquid totam? Rerum eligendi modi
+      quisquam culpa? Nemo animi esse consectetur ipsum rem numquam sequi,
+      impedit adipisci!
+    </div>
+    <form style="padding: 20px; margin-top: 10px">
+      <div>
+        <label class="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" />
+      </div>
+      <div style="padding: 20px; margin-top: 10px">
+        <label class="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" />
+      </div>
+      <div style="padding: 20px; margin-top: 10px">
+        <label class="emailid">Email_Id</label>
+        <input type="text" name="emailid" id="emailid" />
+      </div>
+      <div style="padding: 20px; margin-top: 10px">
+        <label class="Password">Password</label>
+        <input type="text" name="Password" id="Password" />
+      </div>
+      <div>
+        <input type="submit" name="submit" />
+      </div>
+    </form>
+
+    <h2>JavaScript HTML Events</h2>
+    <h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+    <button onclick="displayDate()">The time is?</button>
+
+    <script>
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+    </script>
+
+    <p id="demo"></p>
+
+    <button id="btn">
+      Click me with any mouse button: left, right, middle, ...
+    </button>
+    <p id="message"></p>
+    <script>
+      let btn = document.querySelector("#btn");
+
+      // disable context menu when right-mouse clicked
+      btn.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+      });
+
+      // show the mouse event message
+      btn.addEventListener("mouseup", (e) => {
+        let msg = document.querySelector("#message");
+        switch (e.button) {
+          case 0:
+            msg.textContent = "Left mouse button clicked.";
+            break;
+          case 1:
+            msg.textContent = "Middle mouse button clicked.";
+            break;
+          case 2:
+            msg.textContent = "Right mouse button clicked.";
+            break;
+          default:
+            msg.textContent = `Unknown mouse button code: ${event.button}`;
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        h1{
+            color: whitesmoke;
+        }
+        body{
+            background-color: rgb(114, 74, 129);
+            
+        }
+
+        #sai{
+            margin-top:150px ;
+            /* border: 1px solid black; */
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div id="sai">
+        <h1>LOG IN PAG</h1><br><br>
+     <form>
+
+        <label for>USER NAME :</label>
+        <input type="text" placeholder="name"><br><br>
+        <label for="">PASSWORD :</label>
+        <input type="text" placeholder="password"><br><br><br>
+         <!-- <input type="button"value="LOG IN">  -->
+
+</form>
+<button>
+    LOG IN
+</button>
+<button>
+GO BACK
+</button>
+    </div>
+  
+   </center>
+
+                                                     
+ 
+   <script>
+     var btn=document.getElementsByTagName("button")
+     btn[0].addEventListener("click",sai)
+     btn[1].addEventListener("click",mahi)
+
+     function sai(){
+        window.location.assign("./index3.html")
+     }
+
+     function mahi(){
+        window.history.back("./index1.html")
+     }
+
+   </script>
+</body>
+</html>
